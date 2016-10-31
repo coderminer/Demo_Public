@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Design support 实例</string>
+
+    <string name="action_settings">设置</string>
+    <string name="nav_item_attachment">附件</string>
+    <string name="nav_item_images">图像</string>
+    <string name="nav_item_location">我的位置</string>
+    <string name="nav_sub_menu">子菜单</string>
+    <string name="nav_sub_menu_item01">子菜单 1</string>
+    <string name="nav_sub_menu_item02">子菜单 2</string>
+    <string name="drawer_header_text">导航标题</string>
+    <string name="second_activity_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur diam id aliquam scelerisque. Donec ultrices lacus vel dignissim pharetra. Vivamus pharetra augue quis rhoncus placerat. Sed ultricies at risus non cursus. Nam rutrum leo nec placerat consectetur. Vestibulum feugiat eleifend diam, nec interdum augue tincidunt sit amet. Praesent feugiat est auctor lacus consectetur, vitae pellentesque dolor laoreet.</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>
