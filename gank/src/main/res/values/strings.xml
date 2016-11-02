@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Glide示例</string>
+    <string name="fuli">福利</string>
+    <string name="local">本地图库</string>
+    <string name="fuli_title">福利(网络图片)</string>
+</resources>
