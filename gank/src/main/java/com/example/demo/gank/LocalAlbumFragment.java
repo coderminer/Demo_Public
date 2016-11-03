@@ -1,11 +1,8 @@
 package com.example.demo.gank;
 
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -24,17 +21,6 @@ public class LocalAlbumFragment extends Fragment{
     private RecyclerView mReyclerView;
     private GankAdapter mAdapter;
 
-    private Handler mHandler = new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch (msg.what){
-                case 2:
-                    loadData();
-                    break;
-            }
-        }
-    };
 
     public LocalAlbumFragment() {
         super();
@@ -68,8 +54,7 @@ public class LocalAlbumFragment extends Fragment{
 
             @Override
             protected void onPostExecute(Void aVoid) {
-                mHandler.sendEmptyMessage(2);
-
+                loadData();
             }
         };
 
