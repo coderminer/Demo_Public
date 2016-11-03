@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission android:name="com.example.demo.gank.provider.READ_PROVIDER" android:protectionLevel="normal"></permission>
+    <permission android:name="com.example.demo.gank.provider.WRITE_PROVIDER" android:protectionLevel="normal"></permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +27,15 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".LocalAlbumActivity"
             android:label="@string/local"></activity>
+        
+        <provider
+            android:authorities="com.example.demo.gank.provider"
+            android:name="com.example.demo.gank.provider.SettingsProvider"
+            android:readPermission="com.example.demo.gank.provider.READ_PROVIDER"
+            android:writePermission="com.example.demo.gank.provider.WRITE_PROVIDER"
+            android:exported="true">
+
+        </provider>
     </application>
 
 </manifest>
